@@ -1,0 +1,91 @@
+@CHARSET "ISO-8859-1";
+
+body ,html{
+    background-color: #c0c0c0;
+    height : 100%;
+}
+
+.navi{
+	background-color : red;
+}
+
+.flex-container {
+
+  background-color: #FFF;
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  align-items: center; 
+  padding:20px 50px;
+  height: 500px;
+  max-width: 700px;
+ 
+  
+}
+
+.flex-container > div {
+  flex:1;
+  background-color: #f1f1f1;
+  flex-basis: 45%;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+  cursor:pointer;
+  box-sizing:border-box;
+  padding:30px;
+  
+}
+
+@media(min-width : 900px){
+	.flex-container, .box {
+	 display: flex; 
+  	 justify-content: space-between;
+	}
+	
+	
+}
+
+.back{
+	cursor:pointer;
+	color:darkblue;
+	flex:1;
+}
+
+.box{
+	
+  background-color: #FFF;
+  line-height: 1.65;
+  align-items: center; 
+  padding:20px 50px;
+  
+}
+
+table {
+	background-color: #FFF;
+	line-height: 1.65;
+	flex:1;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom:20px;
+	width:15%;
+}
+
+td, .err{
+	text-align:center !important;
+}
+
+.box > h2{
+	flex:1;
+}
+
+.box > button, span{
+	align-items: center;
+	color:green;
+	cursor:pointer;
+	margin:auto;
+}
+
+.box > input{
+	flex:2;
+	height:20px;
+	min-width:200px;
+}

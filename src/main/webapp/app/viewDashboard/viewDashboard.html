@@ -1,0 +1,28 @@
+<div >
+	<div class="back" data-ng-click ="VCTRL.dashboard()">Dashboard</div>
+	<div class="box">
+		<table>
+			<tr>
+				<th>Id</th>
+				<th>First name</th>
+				<th>Last name</th>
+				<th>Address</th>
+				<th>Number</th>
+			</tr>
+			<tr data-ng-repeat="emp in VCTRL.empList">
+				<td>{{emp.id}}</td>
+				<td>{{emp.first_name}}</td>
+				<td>{{emp.last_name}}</td>
+				<td>{{emp.address}}</td>
+				<td>{{emp.number}}</td>
+			</tr>
+		</table>
+		
+	</div>
+	<div class="err" data-ng-if="VCTRL.err != ''">
+		{{VCTRL.err}}
+	</div>
+			
+		
+	
+</div>
